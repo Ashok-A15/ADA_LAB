@@ -1,6 +1,5 @@
 
 #include <stdio.h>
-
 void main(){
 	int m,n,min,count=0;;
 	printf("Enter m and n>> ");
