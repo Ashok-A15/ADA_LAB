@@ -15,7 +15,7 @@ void linearSearch(int* arr,int key, int n){
 void main(){
 	int n,i,key;
 	int* arr;
-	
+	oi
 	srand(time(0));
 	FILE *b,*w,*a;
 	system("rm b.txt w.txt a.txt");
@@ -30,7 +30,6 @@ void main(){
 		for(i=0;i<n;i++){
 			arr[i] = rand()%100;
 		}
-		
 		//Best Case
 		count=0;
 		key=arr[0];
