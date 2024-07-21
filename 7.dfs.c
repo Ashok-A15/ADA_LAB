@@ -1,3 +1,4 @@
+
 #include<stdio.h>
 #include<stdlib.h>
 int graph[100][100], visited[100], isCyclic = 0;
