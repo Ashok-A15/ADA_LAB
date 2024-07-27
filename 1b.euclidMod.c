@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 void main(){
 	int m,n, count=0;;
