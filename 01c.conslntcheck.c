@@ -15,3 +15,4 @@ void main(){
 	
 	printf("GCD: %d\nCount: %d\n",m, count);
 }
+
