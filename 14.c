@@ -31,34 +31,34 @@ printf("%d-->%d | Cost: %d\n", a, b, min);
 printf("Minimum Cost: %d\n", min_cost);
 }
 void correctness() {
-printf("No. of vertices: ");
-scanf("%d", &n);
-printf("Enter cost matrix:\n");
-for (int i = 0; i < n; i++)
-for (int j = 0; j < n; j++)
-scanf("%d", &cost[i][j]);
-for(int i=0;i<n;i++)
-visited[i] = 0;
-prims();
+            printf("No. of vertices: ");
+            scanf("%d", &n);
+            printf("Enter cost matrix:\n");
+            for (int i = 0; i < n; i++)
+            for (int j = 0; j < n; j++)
+            scanf("%d", &cost[i][j]);
+            for(int i=0;i<n;i++)
+            visited[i] = 0;
+            prims();
 }
 void analysis() {
-int i, j;
-FILE *f;
-f = fopen("BC14.txt", "a");
-for (n = n1; n <= n2; n += 1) {
-for (i = 0; i < n; i++)
-for (j = 0; j < n; j++)
-if (i == j)
-cost[i][j] = 0;
-else
-cost[i][j] = rand() % 10;
-for(int i=0;i<n;i++)
-visited[i] = 0;
-cnt = 0;
-prims();
-fprintf(f, "%d\t%d\n", n, cnt);
-}system("gnuplot>load 'command.txt'");
-fclose(f);
+            int i, j;
+            FILE *f;
+            f = fopen("BC14.txt", "a");
+            for (n = n1; n <= n2; n += 1) {
+            for (i = 0; i < n; i++)
+            for (j = 0; j < n; j++)
+            if (i == j)
+            cost[i][j] = 0;
+            else
+            cost[i][j] = rand() % 10;
+            for(int i=0;i<n;i++)
+            visited[i] = 0;
+            cnt = 0;
+            prims();
+            fprintf(f, "%d\t%d\n", n, cnt);
+            }system("gnuplot>load 'command.txt'");
+            fclose(f);
 }
 void main() {
 int ch;
