@@ -2,29 +2,31 @@
 #include<stdlib.h>
 #define n1 4
 #define n2 8
+
 int cost[40][40], n, visited[40],cnt;
+
 void prims() {
-int i, j, edges = 0;
-int a, b, min, min_cost = 0;
-visited[0] = 1;
+      int i, j, edges = 0;
+      int a, b, min, min_cost = 0;
+      visited[0] = 1;
 while (edges < n - 1) {
-min = 9999;
+      min = 9999;
 for (i = 0; i < n; i++) {
-if (visited[i]) {
-for (j = 0; j < n; j++) {
+i      f (visited[i]) {
+        for (j = 0; j < n; j++) {
 cnt++;
 if (cost[i][j] && min > cost[i][j] && !visited[j]) {
-min = cost[i][j];
-a = i;
-b = j;
-}
-}
-}
+        min = cost[i][j];
+          a = i;
+          b = j;
+        }
+    }
+  }
 }
 printf("%d-->%d | Cost: %d\n", a, b, min);
-visited[b] = 1;
-min_cost += min;
-edges++;
+    visited[b] = 1;
+    min_cost += min;
+    edges++;
 }
 printf("Minimum Cost: %d\n", min_cost);
 }
