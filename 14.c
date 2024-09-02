@@ -61,24 +61,24 @@ void analysis() {
             fclose(f);
 }
 void main() {
-int ch;
+      int ch;
 printf("1.analysis\t\t2.correctness\t\t0.exit\n");
 for (;;) {
 printf("enter choice: ");
 scanf("%d", &ch);
 switch (ch) {
 case 1:
-analysis();
-break;
+      analysis();
+      break;
 case 2:
-correctness();
-break;
+      correctness();
+      break;
 case 0:
-printf("exiting..\n");
-exit(0);
+      printf("exiting..\n");
+      exit(0);
 default:
-printf("wrong choice!!\n");
-break;
+      printf("wrong choice!!\n");
+      break;
 }
 }
 }
