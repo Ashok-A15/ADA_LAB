@@ -1,5 +1,6 @@
 
-#include <stdio.h>
+#in
+clude <stdio.h>
 void main(){
 	int m,n,min,count=0;;
 	printf("Enter m and n>> ");
