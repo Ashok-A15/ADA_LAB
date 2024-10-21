@@ -27,6 +27,7 @@ void main(){
 	for(n=10;n<1000;n+=10){
 		arr = (int*)malloc(n*sizeof(int));
 		
+		
 		for(i=0;i<n;i++){
 			arr[i] = rand()%100;
 		}
