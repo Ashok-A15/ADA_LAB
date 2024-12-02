@@ -11,7 +11,6 @@ void linearSearch(int* arr,int key, int n){
 	}
 }
 
-
 void main(){
 	int n,i,key;
 	int* arr;
